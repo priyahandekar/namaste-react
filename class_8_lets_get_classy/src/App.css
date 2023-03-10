@@ -1,0 +1,127 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0.6rem;
+	border: 1px solid black;
+}
+
+.nav-items > ul {
+	list-style-type: none;
+	display: flex;
+}
+
+.nav-items > ul > li {
+	padding: 0.6rem;
+}
+
+.card {
+	width: 12.5rem;
+	border: 1px solid black;
+	padding: 0.6rem;
+	margin: 0.6rem;
+}
+
+.card > img {
+	width: 100%;
+}
+
+.restaurant-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+}
+
+/* Shimmer CSS */
+.shimmer-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+}
+.shimmer-card {
+	flex-basis: 250px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-color: #d3d5df;
+	box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-title {
+	width: 60%;
+	margin-top: 10px;
+}
+.shimmer-tags {
+	width: 80%;
+	margin-top: 4px;
+}
+.shimmer-details {
+	width: 100%;
+	margin-top: 18px;
+}
+.shimmer-container .shimmer-img {
+	height: 144px;
+	width: 207px;
+}
+
+/*Animation to Shimmer Component Cards */
+.stroke {
+	height: 15px;
+	background: #777;
+}
+.animate {
+	animation: shimmer 3s;
+	animation-iteration-count: infinite;
+	background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+	background-size: 1000px 100%;
+}
+@keyframes shimmer {
+	from {
+		background-position: -1000px 0;
+	}
+	to {
+		background-position: 1000px 0;
+	}
+}
+
+/* Restaurant Details CSS */
+.restaurant-details {
+	display: flex;
+}
+/* .input {
+	width: 15rem;
+	height: 2rem;
+	margin: 5px;
+	border-radius: 0.6rem;
+}
+
+.btn {
+	height: 30px;
+	width: 30px;
+	text-align: center;
+}
+
+.user {
+	margin-right: 25px;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+}
+.left {
+	margin-left: 40px;
+}
+
+.left img {
+	width: 50px;
+	margin: 0.6rem 40px 0 0.6rem;
+	cursor: pointer;
+}
+img:hover {
+	transform: scale(1.1);
+} */
+
+.logo {
+	width: 100px;
+}
